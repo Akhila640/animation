@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        img:hover{
+            animation-name:roll-right;
+            animation-duration: 4s;
+            animation-delay: 1s;
+            animation-iteration-count: 3;
+            animation-direction: alternate;
+            animation-timing-function: linear;
+            margin-top: 40px;
+        }
+            
+        
+        #img2:hover{
+            animation-name:roll-left;
+            animation-duration: 4s;
+            animation-delay: 1s;
+            animation-iteration-count: 3;
+            animation-direction:alternate;
+            animation-timing-function: linear;
+        }
+
+        #vertical:hover{
+            animation-name: move-vertical;
+            animation-duration: 4s;
+            animation-delay: 1s;
+            animation-iteration-count: 3;
+            animation-direction:alternate;
+            animation-timing-function: linear;
+
+        }
+        @keyframes roll-right {
+            from{
+                transform: translateX(100) rotate(0deg);
+
+            }
+            to{
+                transform: translateX(400px) rotate(360deg);
+            }
+        }
+        @keyframes roll-left {
+            from{
+                transform: translateX(100px) rotate(0deg);
+            }
+            to{
+                transform: translateX(-400px) rotate(-360deg);
+            }
+
+        }
+        @keyframes move-vertical{
+            from{
+                transform: translateY(100px) rotate(0deg);
+            }
+            to{
+                transform: translateY(400px) rotate(360deg);
+            }
+            
+            
+        }
+        
+    </style>
+</head>
+<body>
+    <table border="1" style="width:1450px"cellpadding="20px"align="center"cellspacing="0">
+        <tbody>
+            
+            <tr align="center">
+
+                <td>image1</td>
+                <td><img id="img1"src="https://cdn.pixabay.com/photo/2024/02/19/08/49/hibiscus-8582876_640.jpg" width="100" height="100">
+                </td></tr>
+                
+            <tr align="center">
+                    <td>image2</td>
+                    <td><img id="img2" src="https://static.vecteezy.com/system/resources/thumbnails/026/829/465/small_2x/beautiful-girl-with-autumn-leaves-photo.jpg" width="100" height="100">
+                    </td></tr>
+                    
+            <tr align="center">
+                        <td>image3</td>
+                        <td><img id="vertical" src="https://t4.ftcdn.net/jpg/05/57/29/25/360_F_557292539_2kXYz0frOcCGISoYEd2MNTmxyT0lYyOj.jpg" width="100" height="100">
+                    </td></tr>
+        </tbody>
+    </table>
+    
+</body>
+</html>
